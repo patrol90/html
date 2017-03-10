@@ -1,0 +1,158 @@
+body {
+  padding: 1px;
+  margin: 0px;
+  border: 0px;
+  border-bottom: 1px solid green; }
+
+p {
+  margin: 0px; }
+
+#professor {
+  background: #E8E8E8; }
+  #professor .ear-left {
+    background: #F0BEAF;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 53px;
+    top: 80px; }
+  #professor .ear-right {
+    background: #F0BEAF;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 127px;
+    top: 80px; }
+  #professor .ear-left:before, #professor .ear-right:before {
+    background: #e89b84;
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 10px;
+    top: 5px;
+    left: 5px; }
+  #professor .face {
+    width: 80px;
+    height: 80px;
+    background: #F0BEAF;
+    border-radius: 80px;
+    position: absolute;
+    left: 60px;
+    top: 50px; }
+    #professor .face .mouth {
+      background: #424b54;
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      top: 60px;
+      z-index: 12;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      left: 50%;
+      transform: translateX(-50%); }
+    #professor .face .eye {
+      background: #424b54;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      position: absolute;
+      left: 25%;
+      transform: translateX(-50%);
+      top: 30px; }
+    #professor .face .eye:after {
+      content: '';
+      position: absolute;
+      background: #424b54;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      right: -40px; }
+    #professor .face .nose {
+      background: #e48a6f;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 32px;
+      width: 8px;
+      position: absolute;
+      border-radius: 4px;
+      height: 13px; }
+  #professor .body {
+    background: #424b54;
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    transform: translateX(-50%);
+    border-radius: 40px;
+    z-index: 10; }
+    #professor .body .cloth {
+      width: 20px;
+      height: 160px;
+      background: #ccc;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) rotate(8deg);
+      top: -1px; }
+    #professor .body .cloth:before {
+      content: '';
+      width: 20px;
+      height: 160px;
+      background: #ccc;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) rotate(-16deg); }
+  #professor .neck {
+    background: #F0BEAF;
+    width: 30px;
+    height: 38px;
+    position: absolute;
+    left: 50%;
+    top: 105px;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    z-index: 11; }
+
+@keyframes show_round {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); } }
+  #professor .round {
+    width: 260px;
+    height: 260px;
+    border: solid 2px #9acaf9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: show_round 2s  linear infinite; }
+  #professor .round_one {
+    animation-delay: 0s; }
+  #professor .round_two {
+    animation-delay: 0.5s; }
+  #professor .round_three {
+    animation-delay: 1s; }
+
+.stripe {
+  height: 392px;
+  width: 100%;
+  padding: 96px 32px;
+  box-sizing: border-box; }
+  .stripe .container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid #cfcfcf;
+    border-radius: 200px;
+    position: relative;
+    overflow: hidden;
+    z-index: 500; }
