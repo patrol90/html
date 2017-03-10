@@ -161,6 +161,9 @@ p {
 
 
 #cyclops {
+  .container  {
+      border:2px #0c7cd5  solid;
+  }
   background:#2196F3 ;
   .face {
     background: #2196F3;
@@ -218,6 +221,39 @@ p {
       animation:strike_eye 2s linear  infinite ;
 
     }
+    .chup0 {
+      width: 20px;
+      border-radius: 15px;
+      height: 35px;
+      position: absolute;
+      background: #9b651d;
+      z-index: 16;
+      transform: rotate(52deg);
+      top: -16px;
+      left: 10px;
+
+    }
+    .chup1 {
+      width: 60px;
+      height: 20px;
+      background: #9b651d;
+      position: absolute;
+      z-index: 17;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      left: 15px;
+      top: -9px;
+    }
+    .chup2 {
+      width: 20px;
+      height: 20px;
+      background: #9b651d;
+      position: absolute;
+      z-index: 18;
+      left: 45px;
+      transform: rotate(-29deg);
+      top: -19px;
+    }
 
   }
   .hear {
@@ -229,7 +265,7 @@ p {
     left:50%;
     transform: translateX(-50%);
     z-index:9;
-    top: 28px;
+    top: 24px;
 
   }
   .face:after {
@@ -238,8 +274,7 @@ p {
     position: absolute;
     left:50%;
     width:50px;
-    height: 50px;
-    top:20px;
+    height: 70px;
     transform: translateX(-50%);
     border-radius: 10px;
 
@@ -262,7 +297,58 @@ p {
     bottom: -20px;
     transform: translateX(-50%);
     border-radius: 40px;
+    overflow: hidden;
 
+    .stripe_body {
+      background: #FDD835;
+      width: 20px;
+      height: 95px;
+      position: absolute;
+      transform: rotate(-72deg);
+      left: 20px;
+      top: -30px;
+
+    }
+    .stripe_body:before {
+      content: '';
+      background: #FDD835;
+      width: 20px;
+      height: 95px;
+      position: absolute;
+      transform: rotate(73deg);
+      top: 50px;
+    }
+    .orden {
+      background: #2196F3;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      border: 4px #FDD835 solid;
+      border-radius: 30px;
+      box-sizing: border-box;
+      right: 8px;
+      top: 14px;
+    }
+    .orden:after {
+      content: "";
+      width:30px;
+      height: 4px;
+      position: absolute;
+      background: #FDD835;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    .orden:before {
+      content: "";
+      width:30px;
+      height: 4px;
+      position: absolute;
+      background: #FDD835;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
   }
 
 

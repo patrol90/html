@@ -143,6 +143,8 @@ p {
 
 #cyclops {
   background: #2196F3; }
+  #cyclops .container {
+    border: 2px #0c7cd5  solid; }
   #cyclops .face {
     background: #2196F3;
     width: 80px;
@@ -192,6 +194,35 @@ p {
       border-radius: 5px;
       position: absolute;
       animation: strike_eye 2s linear  infinite; }
+    #cyclops .face .chup0 {
+      width: 20px;
+      border-radius: 15px;
+      height: 35px;
+      position: absolute;
+      background: #9b651d;
+      z-index: 16;
+      transform: rotate(52deg);
+      top: -16px;
+      left: 10px; }
+    #cyclops .face .chup1 {
+      width: 60px;
+      height: 20px;
+      background: #9b651d;
+      position: absolute;
+      z-index: 17;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      left: 15px;
+      top: -9px; }
+    #cyclops .face .chup2 {
+      width: 20px;
+      height: 20px;
+      background: #9b651d;
+      position: absolute;
+      z-index: 18;
+      left: 45px;
+      transform: rotate(-29deg);
+      top: -19px; }
   #cyclops .hear {
     background: #9b651d;
     width: 80px;
@@ -201,15 +232,14 @@ p {
     left: 50%;
     transform: translateX(-50%);
     z-index: 9;
-    top: 28px; }
+    top: 24px; }
   #cyclops .face:after {
     content: '';
     background: #F0BEAF;
     position: absolute;
     left: 50%;
     width: 50px;
-    height: 50px;
-    top: 20px;
+    height: 70px;
     transform: translateX(-50%);
     border-radius: 10px; }
   #cyclops .neck {
@@ -228,7 +258,52 @@ p {
     left: 50%;
     bottom: -20px;
     transform: translateX(-50%);
-    border-radius: 40px; }
+    border-radius: 40px;
+    overflow: hidden; }
+    #cyclops .body .stripe_body {
+      background: #FDD835;
+      width: 20px;
+      height: 95px;
+      position: absolute;
+      transform: rotate(-72deg);
+      left: 20px;
+      top: -30px; }
+    #cyclops .body .stripe_body:before {
+      content: '';
+      background: #FDD835;
+      width: 20px;
+      height: 95px;
+      position: absolute;
+      transform: rotate(73deg);
+      top: 50px; }
+    #cyclops .body .orden {
+      background: #2196F3;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      border: 4px #FDD835 solid;
+      border-radius: 30px;
+      box-sizing: border-box;
+      right: 8px;
+      top: 14px; }
+    #cyclops .body .orden:after {
+      content: "";
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      background: #FDD835;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg); }
+    #cyclops .body .orden:before {
+      content: "";
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      background: #FDD835;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg); }
 
 @keyframes strike_eye {
   0% {
