@@ -141,6 +141,117 @@ p {
   #professor .round_three {
     animation-delay: 1s; }
 
+#cyclops {
+  background: #2196F3; }
+  #cyclops .face {
+    background: #2196F3;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    z-index: 10; }
+    #cyclops .face .mouse {
+      background: #424b54;
+      width: 35px;
+      position: absolute;
+      height: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      z-index: 10; }
+    #cyclops .face .nose {
+      background: #e48a6f;
+      width: 8px;
+      position: absolute;
+      height: 15px;
+      border-radius: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30px;
+      z-index: 11; }
+    #cyclops .face .eye {
+      width: 80px;
+      height: 20px;
+      position: absolute;
+      border-radius: 4px;
+      background: #FDD835;
+      top: 10px;
+      z-index: 12; }
+    #cyclops .face .eye:after {
+      content: '';
+      width: 70px;
+      height: 10px;
+      margin-top: 5px;
+      margin-left: 5px;
+      background: #c62828;
+      border-radius: 5px;
+      position: absolute;
+      animation: strike_eye 2s linear  infinite; }
+  #cyclops .hear {
+    background: #9b651d;
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    border-radius: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    top: 28px; }
+  #cyclops .face:after {
+    content: '';
+    background: #F0BEAF;
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px; }
+  #cyclops .neck {
+    background: #2196F3;
+    width: 30px;
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+    position: absolute; }
+  #cyclops .body {
+    background: #2196F3;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 40px; }
+
+@keyframes strike_eye {
+  0% {
+    background: #c62828; }
+  25% {
+    background: #c62828; }
+  30% {
+    background: #f44336; }
+  35% {
+    background: #c62828; }
+  45% {
+    background: #f44336; }
+  50% {
+    background: #c62828; }
+  70% {
+    background: #c62828; }
+  75% {
+    background: #f44336; }
+  80% {
+    background: #c62828; }
+  100% {
+    background: #c62828; } }
+
 .stripe {
   height: 392px;
   width: 100%;
