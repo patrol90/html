@@ -367,7 +367,8 @@ p {
       position: absolute;
       left: 25%;
       transform: translateX(-50%);
-      top: 35px; }
+      top: 35px;
+      animation: red_eyes 8s infinite linear; }
     #jeangrey .face .eye:after {
       content: '';
       background: #424b54;
@@ -375,7 +376,22 @@ p {
       height: 10px;
       border-radius: 10px;
       position: absolute;
-      left: 40px; }
+      left: 40px;
+      animation: red_eyes 8s infinite linear; }
+
+@keyframes red_eyes {
+  0% {
+    background: #424b54; }
+  10% {
+    background: #FB8C00; }
+  20%, 40%, 60%, 80% {
+    background: #FB8C00; }
+  30%, 50%, 70% {
+    background: #FB8C00; }
+  80% {
+    background: #FB8C00; }
+  100% {
+    background: #424b54; } }
   #jeangrey .neck {
     background: #F0BEAF;
     width: 25px;
@@ -448,7 +464,11 @@ p {
     width: 100%;
     height: 100px;
     position: absolute;
-    top: 130px; }
+    top: 255px;
+    animation-name: fire;
+    animation-duration: 8s;
+    animation-timing-function: cubic-bezier-1;
+    animation-iteration-count: infinite; }
     #jeangrey .fire .flame {
       background: #FB8C00;
       width: 5%;
@@ -533,6 +553,22 @@ p {
     width: 100%;
     height: 50%;
     top: 25%; }
+
+@keyframes fire {
+  0% {
+    top: 200px; }
+  10% {
+    top: 150px; }
+  20%, 40%, 60%, 80% {
+    top: 115px; }
+  30%, 50%, 70% {
+    top: 105px; }
+  80% {
+    top: 150px; }
+  90% {
+    top: 200px; }
+  100% {
+    top: 255px; } }
 
 .stripe {
   height: 392px;
